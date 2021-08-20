@@ -2,11 +2,10 @@
 #include "CHardwareConfiguration.h"
 #include "CTaskMetadata.h"
 
-// This class declares possible hardware configuration the algorithm is compatable with 
-// the implementation of the algorithm. For example platforms supported, number of nodes
-// supported.
+// This class declares possible hardware configuration the algorithm is compatible with. 
+// For example platforms supported (CPUs, GPUs, ...), number of nodes supported, etc.
 // The class also estimates execution time for given hardware configuration and 
-// metadata. For example by calculating number of operations and memory trasfers and
+// metadata. For example by calculating number of operations and memory transfers and
 // then estimating the execution time based on memory bandwidth and FLOPS of the platform.
 class IExecutionEnvelope {
 public:

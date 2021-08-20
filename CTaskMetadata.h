@@ -3,6 +3,7 @@
 #include <string>
 #include <iostream>
 
+// A placeholder for task (processing function) parameters. This needs to be specified more in the future. Metadata contained in this class should not be related to data, that is how to access them, size of the data etc. It should only contain task specific parameters. For example, a number of FFTs to perform, length of the FFT. The exact scope needs to be specified further.
 class CTaskMetadata {
 private:
 	std::map<std::string, int> metadata;
@@ -34,7 +35,7 @@ public:
 
 	~CTaskMetadata() {
 		metadata.clear();
-		std::cout << "CTaskMetadata destruktor" << std::endl;
+		std::cout << "CTaskMetadata destructor" << std::endl;
 	}
 };
 

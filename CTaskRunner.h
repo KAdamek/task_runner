@@ -5,6 +5,7 @@
 #include "CTaskMetadata.h"
 #include "CTaskData.h"
 
+// This is a wrapper which provides unified interface for the scheduler.
 class CTaskRunner {
 private:
 	ITask *task;
